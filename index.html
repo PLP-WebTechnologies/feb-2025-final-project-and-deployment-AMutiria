@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpowerTech Goals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EmpowerTech</h1>
+            <p class="tagline">Driving Growth Through Collaborative Goals</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#employees">Employees</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#company">Company Info</a></li>
+                <li><a href="#motivation">Motivation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <aside>
+            <section id="company-objective">
+                <h2>Our Objective</h2>
+                <p>To foster a culture of continuous improvement and achievement by setting clear, measurable, achievable, relevant, and time-bound (SMART) goals for every team member.</p>
+            </section>
+            <section id="quick-actions">
+                <h2>Quick Actions</h2>
+                <ul>
+                    <li><button id="add-employee-btn">Add Employee</button></li>
+                    <li><button id="assign-goal-shortcut" disabled>Assign Goal</button></li>
+                    <li><button id="view-goals-shortcut" disabled>View Goals</button></li>
+                </ul>
+            </section>
+        </aside>
+
+        <main>
+            <section id="employees">
+                <h2>Employees</h2>
+                <ul id="employee-list"></ul>
+            </section>
+
+            <section id="goals">
+                <h2>Goals</h2>
+                <div id="goal-actions">
+                    <select id="employee-select">
+                        <option value="">Select Employee</option>
+                    </select>
+                    <button id="assign-goal-btn" disabled>Assign Goal</button>
+                    <button id="view-goals-btn" disabled>View Goals</button>
+                </div>
+                <div id="assign-goal-form" style="display: none;">
+                    <h3>Assign New Goal</h3>
+                    <label for="goal-description">Goal Description:</label><br>
+                    <textarea id="goal-description" rows="4" cols="50"></textarea><br><br>
+                    <label for="review-period">Review Period:</label>
+                    <input type="text" id="review-period"><br><br>
+                    <button id="save-goal-btn">Save Goal</button>
+                    <button id="cancel-goal-btn">Cancel</button>
+                </div>
+                <ul id="goals-list"></ul>
+            </section>
+
+            <section id="company">
+                <h2>About EmpowerTech</h2>
+                <p>EmpowerTech is a forward-thinking technology company dedicated to innovation and employee growth. We believe that our success is directly tied to the development and achievements of our talented team members.</p>
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Innovation</li>
+                    <li>Collaboration</li>
+                    <li>Growth</li>
+                    <li>Integrity</li>
+                    <li>Excellence</li>
+                </ul>
+            </section>
+
+            <section id="motivation">
+                <h2>Employee Motivation</h2>
+                <div class="motivation-message">
+                    <h3>You've Got This!</h3>
+                    <p>"The road to success is not always easy, but with dedication and focus, you can achieve any goal you set. Believe in your abilities, embrace challenges as opportunities for growth, and remember that every step forward, no matter how small, contributes to your overall success."</p>
+                </div>
+                <div class="motivation-message">
+                    <h3>Teamwork Makes the Dream Work</h3>
+                    <p>"Collaboration and open communication are key to achieving great things. Support your colleagues, share your knowledge, and celebrate collective successes. Together, we can reach new heights."</p>
+                </div>
+                <div class="motivation-message">
+                    <h3>Continuous Growth</h3>
+                    <p>"Your development is important to us. Embrace learning, seek new skills, and strive for continuous improvement. Your growth not only benefits you but also strengthens our entire organization."</p>
+                </div>
+                <p class="encouragement">Remember, your contributions are valued, and your progress is important. Keep striving, keep learning, and let's achieve great things together!</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EmpowerTech. All rights reserved.</p>
+            <p>Nairobi, Kenya</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
